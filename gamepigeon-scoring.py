@@ -101,6 +101,8 @@ def main():
         print(f"Losses: {results['losses']}")
         print(f"Draws: {results['draws']}")
         print(f"Win percentage: {win_percentage:.1f}%")
+        print(f"Loss percentage: {(results['losses'] / total_games * 100) if total_games > 0 else 0:.1f}%")
+        print(f"Draw percentage: {(results['draws'] / total_games * 100) if total_games > 0 else 0:.1f}%")
 
 
 if __name__ == "__main__":
